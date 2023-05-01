@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 7</title>
+</head>
+<script type="text/javascript">// Lê a quantidade de ingressos para crianças, adultos e casais
+    var qtdCriancas = parseInt(prompt("Digite a quantidade de ingressos para crianças:"));
+    var qtdAdultos = parseInt(prompt("Digite a quantidade de ingressos para adultos:"));
+    var qtdCasais = parseInt(prompt("Digite a quantidade de ingressos para casais:"));
+    
+    // Calcula o valor total do pacote
+    var valorTotal = qtdCriancas * 29.99 + qtdAdultos * 39.99 + qtdCasais * 69.99;
+    
+    // Exibe o valor total do pacote para o usuário
+    document.write("Valor total do pacote: R$ " + valorTotal.toFixed(2));
+    </script>
+</html>

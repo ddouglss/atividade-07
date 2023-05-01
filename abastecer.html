@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 8</title>
+</head>
+<script type="text/javascript">// Define o consumo de combustível do carro em km/l e o preço da gasolina por litro
+    var consumo = 12; // km/l
+    var precoGasolina = 5.20; // R$ por litro
+    
+    // Lê a quantidade de dinheiro que será gasta com gasolina
+    var dinheiroGasto = parseFloat(prompt("Digite a quantidade de dinheiro que será gasta com gasolina:"));
+    
+    // Calcula a quantidade de gasolina que o carro receberá e a distância que ele poderá percorrer com essa quantidade
+    var qtdGasolina = dinheiroGasto / precoGasolina; // litros
+    var distancia = qtdGasolina * consumo; // km
+    
+    // Exibe a quantidade de gasolina e a distância que o carro poderá percorrer para o usuário
+    document.write("Quantidade de gasolina: " + qtdGasolina.toFixed(2) + " litros");
+    document.write("Distância que o carro poderá percorrer: " + distancia.toFixed(2) + " km");
+    </script>
+</html>

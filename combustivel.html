@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 4</title>
+</head>
+<body>
+    <script type="text/javascript">// Lê o tempo gasto na viagem e a velocidade média
+        var tempo = parseFloat(prompt("Digite o tempo gasto na viagem (em horas):"));
+        var velocidadeMedia = parseFloat(prompt("Digite a velocidade média durante a viagem (em km/h):"));
+        
+        // Calcula a distância percorrida (em km) com a fórmula DISTANCIA = TEMPO * VELOCIDADE
+        var distancia = tempo * velocidadeMedia;
+        
+        // Calcula a quantidade de litros de combustível utilizada na viagem com a fórmula LITROS_USADOS = DISTANCIA / 12
+        var litrosUsados = distancia / 12;
+        
+        // Exibe os resultados
+        document.write("Velocidade média: " + velocidadeMedia + " km/h");
+        document.write("Tempo gasto na viagem: " + tempo + " horas");
+        document.write("Distância percorrida: " + distancia + " km");
+        document.write("Litros de combustível utilizados: " + litrosUsados.toFixed(2));
+        </script>
+    
+</body>
+</html>

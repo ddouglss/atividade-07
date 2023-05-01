@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 9</title>
+</head>
+<script type="text/javascript">// Define os preços dos produtos
+    var precoHamburguer = 19.00; // R$
+    var precoRefrigerante = 6.50; // R$
+    var precoBatata = 8.00; // R$
+    
+    // Lê a quantidade de hambúrgueres, refrigerantes e batatas fritas que o usuário deseja comprar
+    var qtdHamburguer = parseInt(prompt("Digite a quantidade de hambúrgueres que você deseja comprar:"));
+    var qtdRefrigerante = parseInt(prompt("Digite a quantidade de refrigerantes que você deseja comprar:"));
+    var qtdBatata = parseInt(prompt("Digite a quantidade de batatas fritas que você deseja comprar:"));
+    
+    // Calcula o valor total da conta
+    var valorTotal = (qtdHamburguer * precoHamburguer) + (qtdRefrigerante * precoRefrigerante) + (qtdBatata * precoBatata);
+    
+    // Exibe o valor total da conta para o usuário
+    document.write("Valor total da conta: R$" + valorTotal.toFixed(2));
+    </script>
+</html>
